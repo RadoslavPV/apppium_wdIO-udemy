@@ -29,12 +29,12 @@ describe("Add Notes", () => {
     await $('//*[@text="OK"]').click();
 
     //assertion note is in the bin
-    // await AddNoteScreen.navBtn.click();
-    // await $('//*[@text="Trash Can"]').click();
-    // const trashCanItem = await $(
-    //   '//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/title"]'
-    // );
+    await AddNoteScreen.navBtn.click();
+    await $('//*[@text="Trash Can"]').click();
+    const trashCanItem = await $(
+      '//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/title"]'
+    );
 
-    // await expect(trashCanItem).toHaveText("Fav Anime List");
+    await expect(trashCanItem).toHaveText("Fav Anime List");
   });
 });
