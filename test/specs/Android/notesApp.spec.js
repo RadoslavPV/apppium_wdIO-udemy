@@ -34,7 +34,8 @@ describe("Add Notes", () => {
     const trashCanItem = await $(
       '//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/title"]'
     );
-
+      // random change
+      
     await expect(trashCanItem).toHaveText("Fav Anime List");
   });
 });
