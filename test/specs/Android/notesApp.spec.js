@@ -22,7 +22,7 @@ describe("Add Notes", () => {
     //assertion
     await expect(AddNoteScreen.editBtn).toBeDisplayed();
   });
-  it("challenge, delete note", async () => {
+  it("challenge, delete note", async() => {
     // delte note
     await $("~More").click();
     await $('//*[@text="Delete"]').click();
